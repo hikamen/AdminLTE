@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | 学员端首页布局</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../plugins/ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+  <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="./css/style.learner.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="../plugins/html5shiv/html5shiv.min.js"></script>
+  <script src="../plugins/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+
+  <div class="content-wrapper" >
+      <div class="container" >
+          <!--写具体内容-->
+          <!--<div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="item active">
+                              <img src="http://placehold.it/1170x300/39CCCC/ffffff&text=I+Love+Bootstrap" alt="First slide">
+
+                              <div class="carousel-caption">
+                                  First Slide
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="http://placehold.it/1170x300/3c8dbc/ffffff&text=I+Love+Bootstrap" alt="Second slide">
+
+                              <div class="carousel-caption">
+                                  Second Slide
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="http://placehold.it/1170x300/f39c12/ffffff&text=I+Love+Bootstrap" alt="Third slide">
+
+                              <div class="carousel-caption">
+                                  Third Slide
+                              </div>
+                          </div>
+                      </div>
+                      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                          <span class="fa fa-angle-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                          <span class="fa fa-angle-right"></span>
+                      </a>
+                  </div>
+              </div>
+          </div>-->
+
+          <div class="row" style="margin-top: 20px;">
+              <div class="col-md-12 col-lg-12">
+
+                  <div class="nav-tabs-custom" id="tab_container">
+                      <ul class="nav nav-tabs">
+                          <li class="active">
+                              <a href="#tab_pending" data-toggle="tab">最新课程</a>
+                          </li>
+                          <li >
+                              <a href="#tab_progress" data-toggle="tab">最热课程</a>
+                          </li>
+                          <li>
+                              <a href="#tab_ended" data-toggle="tab">最优课程</a>
+                          </li>
+                          <li class="pull-right">
+                              <a href="#" class="btn btn-box-tool text-muted"><i class="fa fa-ellipsis-h"></i> </a>
+                          </li>
+                      </ul>
+                      <div class="tab-content">
+                          <div class="tab-pane active " id="tab_pending">
+                              <ul class="list-unstyled list-inline ul-course" >
+
+                                  <li class="course-row">
+                                      <div>
+                                          <img src="http://placekitten.com/210/180 " alt="course" class="img-responsive img-thumbnail"/>
+                                          <div class="course-text">
+                                              <p>如何做一只安静的猫如何做一只安静的猫</p>
+
+                                              <label>2016-10-28</label>
+                                              <div class="tool">
+                                                    <span class="text-muted">
+                                                        <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                        <span class="label-count">(88)</span>
+                                                    </span>
+                                                  <span class="text-muted">
+                                                        <i class="fa fa-lg fa-heart-o"></i>
+                                                        <span class="label-count">(99)</span>
+                                                    </span>
+                                              </div>
+                                          </div>
+                                          <div class="course-type"><span class="label label-success">培训班</span></div>
+                                      </div>
+                                      <div class="course-mask">
+                                          <h4>如何做一只安静的猫如何做一只安静的猫</h4>
+                                          <p>详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容</p>
+                                          <div class="div-action">
+                                              <a href="#" class="">学习</a>
+                                          </div>
+                                      </div>
+                                  </li>
+
+
+
+                                  <li class="course-row">
+                                      <div>
+                                          <img src="http://placekitten.com/210/180 " alt="course" class="img-responsive img-thumbnail"/>
+                                          <div class="course-text">
+                                              <p>如何做一只安静的猫如何做一只安静的猫</p>
+
+                                              <label>2016-10-28</label>
+                                              <div class="tool">
+                                                    <span class="text-muted">
+                                                        <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                        <span class="label-count">(88)</span>
+                                                    </span>
+                                                  <span class="text-muted">
+                                                        <i class="fa fa-lg fa-heart-o"></i>
+                                                        <span class="label-count">(99)</span>
+                                                    </span>
+                                              </div>
+                                          </div>
+                                          <div class="course-type"><span class="label label-success">培训班</span></div>
+                                      </div>
+                                      <div class="course-mask">
+                                          <h4>如何做一只安静的猫如何做一只安静的猫</h4>
+                                          <p>详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容</p>
+                                          <div class="div-action">
+                                              <a href="#" class="">学习</a>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="course-row">
+                                      <div>
+                                          <img src="http://placekitten.com/210/180 " alt="course" class="img-responsive img-thumbnail"/>
+                                          <div class="course-text">
+                                              <p>如何做一只安静的猫如何做一只安静的猫</p>
+
+                                              <label>2016-10-28</label>
+                                              <div class="tool">
+                                                    <span class="text-muted">
+                                                        <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                        <span class="label-count">(88)</span>
+                                                    </span>
+                                                  <span class="text-muted">
+                                                        <i class="fa fa-lg fa-heart-o"></i>
+                                                        <span class="label-count">(99)</span>
+                                                    </span>
+                                              </div>
+                                          </div>
+                                          <div class="course-type"><span class="label label-success">培训班</span></div>
+                                      </div>
+                                      <div class="course-mask">
+                                          <h4>如何做一只安静的猫如何做一只安静的猫</h4>
+                                          <p>详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容</p>
+                                          <div class="div-action">
+                                              <a href="#" class="">学习</a>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="course-row">
+                                      <div>
+                                          <img src="http://placekitten.com/210/180 " alt="course" class="img-responsive img-thumbnail"/>
+                                          <div class="course-text">
+                                              <p>如何做一只安静的猫如何做一只安静的猫</p>
+
+                                              <label>2016-10-28</label>
+                                              <div class="tool">
+                                                    <span class="text-muted">
+                                                        <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                        <span class="label-count">(88)</span>
+                                                    </span>
+                                                  <span class="text-muted">
+                                                        <i class="fa fa-lg fa-heart-o"></i>
+                                                        <span class="label-count">(99)</span>
+                                                    </span>
+                                              </div>
+                                          </div>
+                                          <div class="course-type"><span class="label label-success">培训班</span></div>
+                                      </div>
+                                      <div class="course-mask">
+                                          <h4>如何做一只安静的猫如何做一只安静的猫</h4>
+                                          <p>详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容详细内容</p>
+                                          <div class="div-action">
+                                              <a href="#" class="">学习</a>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="tab-pane " id="tab_progress">
+
+                          </div>
+                          <div class="tab-pane" id="tab_ended">
+
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+
+          <div class="row two-col">
+              <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+                  <div class="box box-widget">
+                      <div class="box-header with-border">
+                          <h4>最新资讯</h4>
+                          <div class="box-tools pull-right">
+                              <a href="#" class="btn btn-box-tool"><i class="fa fa-ellipsis-h"></i> </a>
+                          </div>
+                      </div>
+                      <div class="box-body">
+                          <div id="announcementContainer">
+                              <ul class="list-unstyled">
+                                  <li class="announ-li">
+                                      <div class="row announ-row">
+                                          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                              <img src="http://placekitten.com/120/120" class="img-responsive img-thumbnail"
+                                                   alt="No Image">
+                                          </div>
+                                          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                              <div class="title">
+                                                  <h5 class="pull-left"><a href="javascript:void(0);" onclick="">喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵</a></h5>
+                                                  <span class="pull-right">2016-11-28</span>
+                                              </div>
+                                              <div>
+                                                  <p class="p-desc">
+                                                      喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+                                                      喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+                                                  </p>
+                                              </div>
+                                              <div class="tool">
+                                            <span class="text-muted">
+                                                <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                <span class="label-count">(25)</span>
+                                            </span>
+                                                  <span class="text-muted">
+                                                <i class="fa fa-lg fa-commenting-o"></i>
+                                                <span class="label-count">(99)</span>
+                                            </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="announ-li">
+                                      <div class="row announ-row">
+                                          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                              <img src="http://placekitten.com/120/120" class="img-responsive img-thumbnail"
+                                                   alt="No Image">
+                                          </div>
+                                          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                              <div class="title">
+                                                  <h5 class="pull-left"><a href="javascript:void(0);" onclick="">喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵</a></h5>
+                                                  <span class="pull-right">2016-11-28</span>
+                                              </div>
+                                              <div>
+                                                  <p class="p-desc">
+                                                      喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+                                                  </p>
+                                              </div>
+                                              <div class="tool">
+                                            <span class="text-muted">
+                                                <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                <span class="label-count">(25)</span>
+                                            </span>
+                                                  <span class="text-muted">
+                                                <i class="fa fa-lg fa-commenting-o"></i>
+                                                <span class="label-count">(99)</span>
+                                            </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="announ-li">
+                                      <div class="row announ-row">
+                                          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                              <img src="http://placekitten.com/120/120" class="img-responsive img-thumbnail"
+                                                   alt="No Image">
+                                          </div>
+                                          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                              <div class="title">
+                                                  <h5 class="pull-left"><a href="javascript:void(0);" onclick="">喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵</a></h5>
+                                                  <span class="pull-right">2016-11-28</span>
+                                              </div>
+                                              <div>
+                                                  <p class="p-desc">
+                                                      喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵
+                                                  </p>
+                                              </div>
+                                              <div class="tool">
+                                            <span class="text-muted">
+                                                <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                                <span class="label-count">(25)</span>
+                                            </span>
+                                                  <span class="text-muted">
+                                                <i class="fa fa-lg fa-commenting-o"></i>
+                                                <span class="label-count">(99)</span>
+                                            </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+
+
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4" >
+                  <div class="box box-widget">
+                      <div class="box-header with-border">
+                          <h4>积分排行榜</h4>
+                          <div class="box-tools pull-right">
+                              <a href="#" class="btn btn-box-tool"><i class="fa fa-ellipsis-h"></i> </a>
+                          </div>
+                      </div>
+                      <div class="box-body">
+                          <div id="creditPointContainer">
+                              <ul class="list-unstyled" >
+                                  <li class="rank-li">
+                                      <div class="row rank-row">
+                                          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                              <label class="text-red text-bold">1</label>
+                                          </div>
+                                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                              <a href="#">
+                                                  <img src="http://placekitten.com/60/60" class="img-responsive img-circle"
+                                                       alt="Header Image" >
+                                                  <h5>李小喵<br><small>一只贪吃猫</small></h5>
+                                              </a>
+
+                                          </div>
+                                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                              <label>积分:<span>888</span></label>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="rank-li">
+                                      <div class="row rank-row">
+                                          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                              <label class="text-red text-bold">1</label>
+                                          </div>
+                                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                              <a href="#">
+                                                  <img src="http://placekitten.com/60/60" class="img-responsive img-circle"
+                                                       alt="Header Image" >
+                                                  <h5>李小喵<br><small>一只贪吃猫</small></h5>
+                                              </a>
+
+                                          </div>
+                                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                              <label>积分:<span>888</span></label>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="rank-li">
+                                      <div class="row rank-row">
+                                          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                              <label class="text-red text-bold">1</label>
+                                          </div>
+                                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                              <a href="#">
+                                                  <img src="http://placekitten.com/60/60" class="img-responsive img-circle"
+                                                       alt="Header Image" >
+                                                  <h5>李小喵<br><small>一只贪吃猫</small></h5>
+                                              </a>
+
+                                          </div>
+                                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                              <label>积分:<span>888</span></label>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="rank-li">
+                                      <div class="row rank-row">
+                                          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                              <label class="text-red text-bold">1</label>
+                                          </div>
+                                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                              <a href="#">
+                                                  <img src="http://placekitten.com/60/60" class="img-responsive img-circle"
+                                                       alt="Header Image" >
+                                                  <h5>李小喵<br><small>一只贪吃猫</small></h5>
+                                              </a>
+
+                                          </div>
+                                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                              <label>积分:<span>888</span></label>
+                                          </div>
+                                      </div>
+                                  </li>
+
+                                  <li class="rank-li">
+                                      <div class="row rank-row">
+                                          <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                              <label class="text-red text-bold">1</label>
+                                          </div>
+                                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                              <a href="#">
+                                                  <img src="http://placekitten.com/60/60" class="img-responsive img-circle"
+                                                       alt="Header Image" >
+                                                  <h5>李小喵<br><small>一只贪吃猫</small></h5>
+                                              </a>
+
+                                          </div>
+                                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                              <label>积分:<span>888</span></label>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="nav-tabs-custom" id="tab_expert_container">
+                      <ul class="nav nav-tabs">
+                          <li class="active">
+                              <a href="#tab_expert" data-toggle="tab">推荐专家</a>
+                          </li>
+                          <li>
+                              <a href="#tab_lecturer" data-toggle="tab">推荐讲师</a>
+                          </li>
+                          <li class="pull-right">
+                              <a href="javascript:void(0);" class="text-muted" id="moreExpertBtn"
+                                 title="更多"><i class="fa fa-ellipsis-h"></i> </a>
+                          </li>
+                      </ul>
+                      <div class="tab-content">
+                          <div class="tab-pane active " id="tab_expert">
+                              <ul class="list-unstyled list-inline ul-expert" >
+                                  <li>
+                                      <div>
+                                          <img src="http://placekitten.com/210/240 " alt="expert" class="img-responsive img-thumbnail">
+                                      </div>
+                                      <div class="expert-mask">
+                                          <h4>王小喵</h4>
+                                          <p>卖萌专家</p>
+                                      </div>
+                                  </li>
+
+                                  <li>
+                                      <div>
+                                          <img src="http://placekitten.com/210/240 " alt="expert" class="img-responsive img-thumbnail">
+                                      </div>
+                                      <div class="expert-mask">
+                                          <h4>王小喵</h4>
+                                          <p>卖萌专家</p>
+                                      </div>
+                                  </li>
+
+                                  <li>
+                                      <div>
+                                          <img src="http://placekitten.com/210/240 " alt="expert" class="img-responsive img-thumbnail">
+                                      </div>
+                                      <div class="expert-mask">
+                                          <h4>王小喵</h4>
+                                          <p>卖萌专家</p>
+                                      </div>
+                                  </li>
+
+                                  <li>
+                                      <div>
+                                          <img src="http://placekitten.com/210/240 " alt="expert" class="img-responsive img-thumbnail">
+                                      </div>
+                                      <div class="expert-mask">
+                                          <h4>王小喵</h4>
+                                          <p>卖萌专家</p>
+                                      </div>
+                                  </li>
+
+                              </ul>
+                          </div>
+                          <div class="tab-pane " id="tab_lecturer">
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+
+          <div class="row classmates-row" >
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                  <div class="header-title">
+                      <h4>同学圈</h4>
+                      <div>
+                          <a href="javascript:void(0);" id="btnPublish" class="btn btn-flat btn-primary btn-sm"><i class="fa fa-plus">发同学圈</i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row classmates-row" >
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="classmatesContainer" >
+                  <!-- Box Comment -->
+                  <div class="box box-widget">
+                      <div class="box-header with-border">
+                          <div class="user-block">
+                              <img class="img-circle" src="./static/img/avatar5.png" alt="User Image">
+                              <span class="username"><a href="#">王小喵</a></span>
+                              <span class="description">2016-12-01 12:12:12</span>
+                          </div>
+                          <!-- /.user-block -->
+                          <div class="box-tools">
+                              <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="标记已读">
+                                  <i class="fa fa-circle-o"></i></button>
+                              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                              </button>
+                              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                          </div>
+                          <!-- /.box-tools -->
+                      </div>
+                      <!-- /.box-header -->
+                      <div class="box-body" style="display: block;">
+                          <div class="classmates-content">
+                              <img class="img-responsive " src="http://placekitten.com/400/400" alt="Photo" >
+
+                              <p>可爱吗?</p>
+                          </div>
+                          <div class="tool">
+                              <a href="javascript:void(0);" class="btn-like">
+                                  <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                  <span class="label-count">(25)</span>
+                              </a>
+                              <a href="javascript:void(0);" class="text-yellow btn-comment">
+                                  <i class="fa fa-lg fa-comment-o "></i>
+                                  <span class="label-count">(99)</span>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="box-footer box-likes">
+                          <div class="row">
+                              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                  <span class="text-blue"><i class="fa fa-lg fa-thumbs-up"></i></span>
+                              </div>
+                              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="padding-left: 0;">
+                                  <ul class="list-inline">
+                                      <li>
+                                          <a href="#"><img class="img-circle img-sm" src="./static/img/avatar3.png" alt="User Image"></a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- /.box-body -->
+                      <div class="box-footer box-comments" style="display: block;">
+                          <div class="box-comment">
+                              <!-- User image -->
+                              <img class="img-circle img-sm" src="./static/img/avatar3.png" alt="User Image">
+
+                              <div class="comment-text">
+                                  <span class="username">
+                                     <a href="javascript:void(0);" >张小喵</a>
+                                    <span class="text-muted pull-right">2016-12-01 13:13:13</span>
+                                  </span><!-- /.username -->
+                                  好可爱呀!
+                              </div>
+                              <!-- /.comment-text -->
+                          </div>
+
+                          <div class="box-comment">
+                              <!-- User image -->
+                              <img class="img-circle img-sm" src="./static/img/avatar2.png" alt="User Image">
+
+                              <div class="comment-text">
+                                  <span class="username">
+                                      <a href="javascript:void(0);" >李小喵</a> <span class="span-reply">回复</span> <a href="#">张小喵</a>
+                                    <span class="text-muted pull-right">2016-12-01 13:13:13</span>
+                                  </span><!-- /.username -->
+                                  <span>我也这样认为</span>
+                                  <a href="#" class="comment-remove pull-right">
+                                      <i class="fa fa-remove"></i>
+                                  </a>
+                              </div>
+                              <!-- /.comment-text -->
+                          </div>
+
+                      </div>
+                      <!-- /.box-footer -->
+                      <div class="box-footer box-reply" style="display: none;">
+                          <form action="#" method="post">
+                              <img class="img-responsive img-circle img-sm" src="./static/img/avatar5.png" alt="Alt Text">
+                              <!-- .img-push is used to add margin to elements next to floating images -->
+                              <div class="img-push input-group">
+                                  <input type="text" name="message" placeholder="请输入评论" class="form-control">
+                                  <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary btn-flat">发送</button>
+                                      </span>
+                              </div>
+                          </form>
+                      </div>
+                      <!-- /.box-footer -->
+                  </div>
+                  <!-- /.box -->
+
+
+                  <div class="box box-widget">
+                      <div class="box-header with-border">
+                          <div class="user-block">
+                              <img class="img-circle" src="./static/img/avatar5.png" alt="User Image">
+                              <span class="username"><a href="#">王小喵</a></span>
+                              <span class="description">2016-12-01 12:12:12</span>
+                          </div>
+                          <!-- /.user-block -->
+                          <div class="box-tools">
+                              <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="标记已读">
+                                  <i class="fa fa-circle-o"></i></button>
+                              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                              </button>
+                              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                          </div>
+                          <!-- /.box-tools -->
+                      </div>
+                      <!-- /.box-header -->
+                      <div class="box-body" style="display: block;">
+                          <div class="classmates-content">
+                              <div class="share-content">
+                                  <dl class="dl-horizontal">
+                                      <dt>分享笔记</dt>
+                                      <dd><a href="#">这是笔这是笔记这是笔记这是笔记这是笔记这</a></dd>
+                                  </dl>
+                              </div>
+                          </div>
+                          <div class="tool">
+                              <a href="javascript:void(0);" class="btn-like">
+                                  <i class="fa fa-lg fa-thumbs-o-up"></i>
+                                  <span class="label-count">(25)</span>
+                              </a>
+                              <a href="javascript:void(0);" class="text-yellow btn-comment">
+                                  <i class="fa fa-lg fa-comment-o "></i>
+                                  <span class="label-count">(99)</span>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="box-footer box-likes">
+                          <div class="row">
+                              <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                  <span class="text-blue"><i class="fa fa-lg fa-thumbs-up"></i></span>
+                              </div>
+                              <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="padding-left: 0;">
+                                  <ul class="list-inline">
+                                      <li>
+                                          <a href="#"><img class="img-circle img-sm" src="./static/img/avatar3.png" alt="User Image"></a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- /.box-body -->
+                      <div class="box-footer box-comments" style="display: block;">
+                          <div class="box-comment">
+                              <!-- User image -->
+                              <img class="img-circle img-sm" src="./static/img/avatar3.png" alt="User Image">
+
+                              <div class="comment-text">
+                                  <span class="username">
+                                     <a href="javascript:void(0);" >张小喵</a>
+                                    <span class="text-muted pull-right">2016-12-01 13:13:13</span>
+                                  </span><!-- /.username -->
+                                  好可爱呀!
+                              </div>
+                              <!-- /.comment-text -->
+                          </div>
+
+                          <div class="box-comment">
+                              <!-- User image -->
+                              <img class="img-circle img-sm" src="./static/img/avatar2.png" alt="User Image">
+
+                              <div class="comment-text">
+                                  <span class="username">
+                                      <a href="javascript:void(0);" >李小喵</a> <span class="span-reply">回复</span> <a href="#">张小喵</a>
+                                    <span class="text-muted pull-right">2016-12-01 13:13:13</span>
+                                  </span><!-- /.username -->
+                                  <span>我也这样认为</span>
+                                  <a href="#" class="comment-remove pull-right">
+                                      <i class="fa fa-remove"></i>
+                                  </a>
+                              </div>
+                              <!-- /.comment-text -->
+                          </div>
+
+                      </div>
+                      <!-- /.box-footer -->
+                      <div class="box-footer box-reply" style="display: none;">
+                          <form action="#" method="post">
+                              <img class="img-responsive img-circle img-sm" src="./static/img/avatar5.png" alt="Alt Text">
+                              <!-- .img-push is used to add margin to elements next to floating images -->
+                              <div class="img-push input-group">
+                                  <input type="text" name="message" placeholder="请输入评论" class="form-control">
+                                  <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary btn-flat">发送</button>
+                                      </span>
+                              </div>
+                          </form>
+                      </div>
+                      <!-- /.box-footer -->
+                  </div>
+                  <!-- /.box -->
+
+              </div>
+          </div>
+
+
+          <!--发同学圈弹出框-->
+          <div class="container-fluid classmates-popup" >
+              <form action="" method="post" role="form" >
+                  <input id="publish" type="hidden" name="publish" value="false"/>
+                  <div class="form-group">
+                      <label for="content" class="sr-only"></label>
+                      <textarea name="content" id="content" rows="6" placeholder="请输入内容"></textarea>
+                  </div>
+
+                  <span class="btn btn-info fileinput-button btn-flat">
+                        <i class="glyphicon glyphicon-plus"></i>
+                        <span>添加图片</span>
+                      <!-- The file input field used as target for the file upload widget -->
+                        <input id="fileupload" type="file" name="fileImg" multiple>
+                    </span>
+
+                  <button type="button" id="btnSubmit" class="btn btn-info btn-flat pull-right">发&nbsp;表</button>
+              </form>
+
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="images-wrapper"></div>
+                  </div>
+              </div>
+
+          </div>
+
+
+      </div> <!-- .container -->
+  </div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../plugins/layer/layer.js"></script>
+<script src="../plugins/jsrender/jsrender.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/app.min.js"></script>
+
+<!--jquery file upload-->
+<link rel="stylesheet" href="../plugins/blueimp-file-upload/css/jquery.fileupload.css">
+<script src="../plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+<script src="../plugins/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="../plugins/blueimp-file-upload/js/jquery.fileupload.js"></script>
+<script src="../plugins/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+<script src="../plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+
+<script !src="">
+    $(function () {
+        buildClassmatesWidget();
+        buildClassmatesPopup();
+    })
+
+    function buildClassmatesWidget() {
+        $('.classmates-row .box-widget').mouseleave(function () {
+            $(this).find('.box-reply').slideUp();
+        });
+
+        $('.classmates-row .box-comment').click(function () {
+            $(this).parents('.box-widget').find('.box-reply').slideDown();
+            var beReplyName = $(this).find('.username>a:first-child').text();
+            var $input =$(this).parents('.box-widget').find('input[name=message]');
+            $input .attr('placeholder', '回复'+beReplyName+':');
+            $input.focus();
+        });
+
+        $('.classmates-row .box-comment').hover(function () {
+            $(this).find('.comment-remove').show();
+        }, function () {
+            $(this).find('.comment-remove').hide();
+        });
+
+        $('.classmates-row .btn-comment').click(function () {
+            $(this).parents('.box-widget').find('.box-reply').slideDown();
+            var $input =$(this).parents('.box-widget').find('input[name=message]');
+            $input .attr('placeholder', '请输入评论');
+            $input.focus();
+        });
+
+        $('.classmates-row .btn-like').click(function () {
+
+        });
+
+        $('.comment-remove').click(function () {
+
+        });
+
+
+        $('.classmates-row .classmates-content').each(function () { //处理动态中图片的点击事件
+            layer.photos({
+                photos: $(this),
+                anim: 4
+            });
+        })
+
+    }
+
+    /**
+     * 构建同学圈弹出框
+     */
+    function buildClassmatesPopup() {
+        var MAX_NUMBER_OF_FILES = 3; // 允许最大上传文件数
+        var fileNumber = 0;
+        var layIndex = null;
+        var $form = $('.classmates-popup form');
+        var $imagesWrapper = $('.images-wrapper');
+
+        var restore =function() {
+            fileNumber = 0;
+            $('#content').val('');
+            $imagesWrapper.empty();
+            $('#fileupload').val('').removeAttr('disabled');
+            $form.find('input[name="imgPath"]').remove();
+            $('.fileinput-button').removeClass('disabled');
+        };
+
+        $('#btnPublish').click(function () { //弹出发同学圈弹出框
+            restore();
+            var options = {
+                type : 1,
+                title : '发同学圈',
+                area : ['680px', '460px'],
+                scrollbar : false,
+                content : $('.classmates-popup')
+            };
+            layIndex = layer.open(options);
+            $('#content').focus();
+        });
+
+        $('#btnSubmit').click(function () { //提交发同学圈内容
+            if($form.find('input[name="imgPath"]').length ==0) {
+                var content = $('#content').val();
+                if($.trim(content) == '') {
+                    layer.alert('请输入内容或者添加图片并上传!', function(index) {
+                        $('#content').focus();
+                        layer.close(index);
+                    });
+                    return ;
+                }
+            }
+
+            $('#publish').val(true);
+            $form.ajaxSubmit({
+                url: '${ctx}/sharemgt/share!save.action',
+                success : function(){
+                    $('#publish').val(false);
+                    layer.close(layIndex);
+                    buildClassmatesWidget();
+                }
+            });
+        });
+
+        var uploadButton = $($('#uploadBtnTmpl').render());
+        uploadButton.click(function () {
+            var $this = $(this), data = $this.data();
+            $this.off('click').text('中止').on('click', function () {
+                $this.remove();
+                data.abort();
+            });
+            data.submit().always(function () {
+                $this.remove();
+            });
+        });
+
+        var cancelButton = $($('#cancelBtnTmpl').render());
+        cancelButton.click(function() {
+            var $this = $(this);
+            if($this.data('KEY_IMG_HIDDEN')) {
+                $this.data('KEY_IMG_HIDDEN').remove();
+            }
+            $this.data('KEY_DATA').context.remove();
+            $('.fileinput-button').removeClass('disabled');
+            $('#fileupload').removeAttr('disabled');
+        });
+
+
+        $('#fileupload').fileupload({
+            url: '',
+            dataType: 'json',
+            autoUpload: true,
+            acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
+            maxFileSize: 2*1024*1024,
+            previewMaxWidth: 100,
+            previewMaxHeight: 100
+        }).on('fileuploadadd', function (e, data) {
+            data.context = $('<div/>').appendTo($imagesWrapper);
+            $.each(data.files, function (index, file) {
+                var node = $('<p/>').append($('<span/>').text(file.name));
+                if (!index) {
+                    node.append(uploadButton.clone(true).data(data));
+                    node.append(cancelButton.clone(true).data('KEY_DATA', data));
+                }
+                node.appendTo(data.context);
+            });
+            fileNumber++;
+            if(fileNumber >= MAX_NUMBER_OF_FILES) {
+                $('.fileinput-button').addClass('disabled');
+                $('#fileupload').attr("disabled", "true");
+            }
+        }).on('fileuploadprocessalways', function (e, data) {
+            var index = data.index,
+                file = data.files[index],
+                node = $(data.context.children()[index]);
+            if (file.preview) {
+                node.prepend('<br>').prepend(file.preview);
+            }
+            if (file.error) {
+                node.append('<br>').append($('<span class="text-danger"/>').text(file.error));
+            }
+            if (index + 1 === data.files.length) {
+                data.context.find('button.btn-upload').text('上传').prop('disabled', !!data.files.error);
+            }
+        }).on('fileuploaddone', function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                if (file.url) {
+                    var $imgPath = $('<input type="hidden" name="imgPath">').val(file.url).appendTo($form);
+                    data.context.find('.btn-cancel').data('KEY_IMG_HIDDEN', $imgPath);
+                } else if (file.error) {
+                    var error = $('<span class="text-danger"/>').text(file.error);
+                    $(data.context.children()[index]).append('<br>').append(error);
+                }
+            });
+        }).on('fileuploadfail', function (e, data) {
+            $.each(data.files, function (index) {
+                var error = $('<span class="text-danger"/>').text('图片上传失败');
+                $(data.context.children()[index]).append('<br>').append(error);
+            });
+        }).prop('disabled', !$.support.fileInput)
+            .parent().addClass($.support.fileInput ? undefined : 'disabled');
+
+    }
+</script>
+<!--上传按钮模板- -->
+<script id="uploadBtnTmpl" type="text/x-jquery-tmpl">
+    <button class="btn btn-info btn-flat btn-sm btn-upload" disabled="disabled">处理中...</button>
+</script>
+
+<!--取消按钮模板-->
+<script id="cancelBtnTmpl" type="text/x-jquery-tmpl">
+    <button class="btn btn-default btn-flat btn-sm btn-cancel">取消</button>
+</script>
+
+</body>
+</html>
